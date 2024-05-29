@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Phần giới thiệu */
+#phan_tren img{
+    width: 140px;
+    margin-left: 50px;
+    height: 80px;
+}
+
+#phan_tren{
+    display: flex;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#phan_tren .menubar li{
+    display: inline-flex;
+    padding: 10px 15px;
+    position: relative;
+    transition: 0.1s ease-in-out;
+}
+
+#phan_tren .menubar{
+    width: 1000px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+#phan_tren .menubar li:hover{
+    font-size: 16px;
+    transform: scale(1.2);
+}
+
+#phan_tren .menubar a{
+    color: #374f8a;
+}
+
+/* Kết thúc phần trên */
+
+#fullpage{
+    margin-top: 80px !important;
+}
+
+.section{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-title{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    z-index: 999;
+    color: #374f8a;
+}
+
+.section-title:hover{
+    color: #df0218;
+}
+
+.section .s1{
+    height: 500px;
+    margin-top: 100px;
+}
+
+.section-content {
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    max-width: 900px;
+    text-align: justify;
+    margin: 0 90px;
+    
+}
+
+.section-image {
+    position: relative;
+    margin: 20px 28px ;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.hoc_thuat .image, .nghe_nghiep .image{
+    display: inline-flex;
+    margin: 0 30px;
+}
+
+.image .img1, .image .img2, .image .img3{
+    width: 400px;
+    height: 300px;
+}
+
+.hoc_thuat, .nghe_nghiep{
+    background-image: url('../images/Logo_VKU2.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.slide .card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fp-arrow.fp-prev {
+    border-color: transparent #df0218 transparent transparent;
+}
+
+.fp-arrow.fp-next {
+    border-color: transparent transparent transparent #fed014;
+}
+
+.img1, .img2, .img3{
+    padding: 0;
+}
+
+.card{
+    margin-bottom: 20%;
+}
+
+/* .fp-prev:hover, .fp-next:hover {
+    background-color: #2980b9; 
+} */
+
+.fp-controlArrow {
+    display: inline-block;
+/* Đảm bảo các nút hiển thị */
+}
+
+/* hoc thuat */
+
+.hoc_thuat .s2 .p2{
+    margin-bottom: 0px ;
+}
+
+.hoc_thuat .s4 .card{
+    height: 230px;
+}
+
+/* nghe nghiep */
+.nghe_nghiep .s2 .section-content,
+.nghe_nghiep .s3 .section-content,
+.nghe_nghiep .s4 .section-content,
+.hoc_thuat .s2 .section-content,
+.hoc_thuat .s3 .section-content,
+.hoc_thuat .s4 .section-content{
+    max-width: 100%;
+    padding-top: 10px;
+    margin-bottom: 6%;
+}
+
+.nghe_nghiep .s2 .p2{
+    margin-bottom: 0px ;
+}
+
+.nghe_nghiep .s2 .p3{
+    transform: translateY(10px);
+}
+
+
+/* 
+#374f8a: mau xanh 
+#df0218: mau do
+#fed014: mau vang
+*/
+
+
+.carousel-inner {
+    transition: transform 0.5s linear;
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
